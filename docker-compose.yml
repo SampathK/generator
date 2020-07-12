@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+
+  generator:
+    build: .
+    ports:
+      - 9090:9090
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo
+    ports:
+      - 27017:27017
