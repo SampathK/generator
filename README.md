@@ -18,7 +18,7 @@
 ```
 docker-compose -f docker-compose-mongo.yml up
 
-mvn -T8  clean install 
+mvn clean install 
 
 docker-compose -f docker-compose-mongo.yml down
  
